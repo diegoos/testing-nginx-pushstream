@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pushstream Test</title>
+  </head>
+  <body>
+    <p>Messages:</p>
+
+    <div
+      id="messages"
+      style="width: 800px; height: 300px; overflow: scroll;"
+    ></div>
+
+    <br />
+    <br />
+
+    <form id="send-message">
+      <label>Enviar mensagem:</label>
+      <br />
+      <textarea
+        name="send-message"
+        id="the-message"
+        cols="50"
+        rows="5"
+        placeholder="Escreva sua mensagem aqui"
+      ></textarea>
+      <br />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="dist/pushstream.js" type="text/javascript"></script>
+
+    <script src="dist/app.js" type="text/javascript"></script>
+  </body>
+</html>

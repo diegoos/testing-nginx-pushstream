@@ -1,0 +1,8 @@
+web:
+  build: ./.docker-pushstream
+  volumes:
+    - ./logs:/nginx/logs
+    - ./public:/app/public
+  tty: true
+  ports:
+    - '8080:9080'
